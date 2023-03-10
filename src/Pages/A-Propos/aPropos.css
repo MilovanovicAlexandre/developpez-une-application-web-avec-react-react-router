@@ -1,0 +1,25 @@
+.conteneurDesCollapse {
+    /*background-color: aqua;*/
+    margin-top: 40px;
+    margin-bottom: 160px;
+}
+
+/*--------------------------------Media Queries--------------------------------*/
+
+/*-------------------Mode 'Tablette'-------------------*/
+
+@media all and (min-width: 376px) and (max-width: 1300px) {
+
+   
+}
+
+/*-------------------Mobile type iPhone 6/7/8 iOS 11-------------------*/
+
+@media all and (max-width: 376px) { 
+    
+    .conteneurDesCollapse {
+        /*background-color: aqua;*/
+        margin-top: 20px;
+        margin-bottom: 160px;
+    }
+}

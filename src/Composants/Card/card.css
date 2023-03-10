@@ -1,0 +1,53 @@
+.card {
+    border-radius: 10px;
+    width:340px; /*même largeur que .imageCard*/
+    height:340px; /*même hauteur que .imageCard*/
+}
+
+.imageCard {
+    width:340px;
+    height:340px;
+    border-radius: 10px;
+    position: relative;
+    filter: brightness(75%);
+}
+
+.titreCard {
+    /*background-color: blue;*/
+    width: 90%;
+    position: relative;
+    z-index:2;
+    bottom:80px;
+    left:20px;
+    color:#FFFFFF;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------------------------------Media Queries--------------------------------*/
+
+/*-------------------Mode 'Tablette'-------------------*/
+
+@media all and (min-width: 376px) and (max-width: 1300px) {
+
+    .card {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;        
+    }    
+}
+
+/*-------------------Mobile type iPhone 6/7/8 iOS 11-------------------*/
+
+@media all and (max-width: 376px) {
+
+    .card {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;        
+    }
+}
+

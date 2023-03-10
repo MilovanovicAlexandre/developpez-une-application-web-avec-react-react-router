@@ -1,0 +1,134 @@
+header{
+    /*background-color: blue;*/
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.lienAccueil{
+    font-size: 24px;
+    color: #FF6060;
+    text-decoration: none;
+}
+
+.lienAPropos{
+    font-size: 24px;
+    color: #FF6060;
+    text-decoration: none;
+}
+
+.conteneurLogoEtNavigation{
+    /*background-color: green;*/
+    width:1240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteneurNavigation{
+    /*background-color: aqua;*/
+    list-style: none;
+    padding:0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.conteneurDeTouteLaNavigation{
+    /*background-color: red;*/
+    width:20%;
+}
+
+.lienAccueil:hover{
+    text-decoration: underline;
+}
+
+.lienAPropos:hover{
+    text-decoration: underline;
+}
+
+.conteneurLogo, .logoHeader {
+    width:210.32px;
+    height: 68px;
+}
+
+/*--------------------------------Media Queries--------------------------------*/
+
+/*-------------------Mode 'Tablette'-------------------*/
+
+@media all and (min-width: 376px) and (max-width: 1300px) {
+
+    .conteneurLogoEtNavigation{
+        width:95%;
+        justify-content: space-between;
+        
+    }
+
+    .conteneurDeTouteLaNavigation{
+        margin-left: 2%;
+        margin-right: 2%;
+        flex:0.5;   
+    }
+
+    .conteneurLogo{
+        flex:0.5;
+        /*background-color: yellow;*/
+    }
+
+    .conteneurNavigation{
+        justify-content: flex-end;        
+    }
+
+    .conteneurLienAccueil{
+        margin-right: 4%;
+    }
+}
+
+/*-------------------Mobile type iPhone 6/7/8 iOS 11-------------------*/
+
+@media all and (max-width: 376px) {
+
+    .conteneurLogoEtNavigation{
+        width:95%;
+        justify-content: space-between;
+        
+    }
+
+    .conteneurDeTouteLaNavigation{
+        margin-left: 2%;
+        margin-right: 2%;
+        flex:0.5;   
+    }
+
+    .conteneurLogo{
+        flex:0.5;
+        /*background-color: yellow;*/
+    }
+
+    .conteneurNavigation{
+        justify-content: flex-end;        
+    }
+
+    .conteneurLienAccueil{
+        margin-right: 4%;
+    }
+
+    header{
+        margin-top: 10px;
+    }
+
+    .conteneurLogo, .logoHeader {
+        width:145px;
+        height: 47px;
+    }
+
+    .lienAccueil, .lienAPropos{
+        font-size: 12px;
+        text-transform: uppercase; /*Le texte est transformé en majuscule*/
+    }
+}
+
+
