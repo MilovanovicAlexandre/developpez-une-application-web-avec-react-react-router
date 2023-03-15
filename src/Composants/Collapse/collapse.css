@@ -1,26 +1,26 @@
 .conteneurMenuDeroulantTitre {
     background-color: #FF6060;
-    width: 60%;
-    /*height:47px;*/
+    width: 100%;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 60px;
+    padding-left:20px;
 }
 
 .flecheFermetureMenu {
     width: 40px;
     height: 23.86px;
     color: #FFFFFF;
+    margin-right:40px;
 }
 
 .flecheOuvertureMenu {
     width: 40px;
     height: 23.86px;
     color: #FFFFFF;
+    margin-right:40px;
 }
 
 .menuDeroulantTitre {
@@ -28,20 +28,62 @@
     color: #FFFFFF;
 }
 
-.conteneurMenuDeroulant {
+.menuDeroulantTitre2 {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.conteneurPrincipalMenuDeroulant {
     /*background-color: blue;*/
-    display: flex;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteneurPrincipalMenuDeroulant2 {
+    /*background-color: blue;*/
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteneurMenuDeroulant {
+    background-color: #F6F6F6;
+    width:75%;
+    margin-bottom: 40px;
+    display:flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.conteneurMenuDeroulant2 {
+    background-color: #F6F6F6;
+    width:100%;
     margin-bottom: 40px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;
+    padding-right: 20px;
 }
 
 .menuDeroulantTexte {
-    width: 60%; /*même largeur que pour .menuDeroulantTitre*/
+    /*background-color: yellow;*/
     border-radius: 5px;
-    background-color: #F6F6F6;
-    padding-left: 10px; /*même marge intérieure que pour .menuDeroulantTitre*/
-    padding-right: 60px; /*même marge intérieure que pour .menuDeroulantTitre*/
+    margin-top: 20px;
+    padding-left:10px;
+}
+
+.menuDeroulantTexte2 {
+    /*background-color: yellow;*/
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-left:20px;    
 }
 
 .menuDeroulantContenu {
@@ -49,27 +91,23 @@
     color: #FF6060;
 }
 
-/*--------------------------------Media Queries--------------------------------*/
-
-/*-------------------Mode 'Tablette'-------------------*/
-
-@media all and (min-width: 376px) and (max-width: 1300px) {
-
-   
+.menuDeroulantContenu2 {
+    font-size: 20px;
+    color: #FF6060;
 }
 
-/*-------------------Mobile type iPhone 6/7/8 iOS 11-------------------*/
+.menuDeroulantTexteListeDesElements {
+    list-style: none;
+    padding-left: 0px;
+}
 
-@media all and (max-width: 376px) { 
- 
-    .conteneurMenuDeroulantTitre {
-        width: 85%;
-        padding-right: 10px;
-    }
+/*--------------------------------Media Queries--------------------------------*/
+
+@media all and (max-width: 1024px) { 
 
     .menuDeroulantTexte {
-        width: 85%;
-        padding-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 40px;
     }
 
     .menuDeroulantTitre {
@@ -80,12 +118,14 @@
         width: 20px;
         height: 15.2px;
         color: #FFFFFF;
+        margin-right:5px;
     }
     
     .flecheOuvertureMenu {
         width: 20px;
         height: 15.2px;
         color: #FFFFFF;
+        margin-right:5px;
     }
 
     .menuDeroulantContenu {
@@ -94,6 +134,11 @@
     }
 
     .conteneurMenuDeroulant {
+        width:100%;
         margin-bottom: 20px;
+    }
+
+    .conteneurPrincipalMenuDeroulant{
+        width: 90%;       
     }
 }

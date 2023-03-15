@@ -6,6 +6,7 @@ import './aPropos.css'
 
 function APropos() {
 
+    // Données à afficher sur la page APropos
     const donneesAPropos= [
         {
             titre:'Fiabilité',
@@ -27,12 +28,22 @@ function APropos() {
 
     return (
         <main>
+            {/*Appel du composant de la bannière */}
             <Banner imgSrc={imageBanniere} imgAlt='La bannière' imgTexteAccompagnement='' classConteneurBanniere='conteneurPrincipalBanniere2'/>
 
             <div className='conteneurDesCollapse'>
                 {/*L'index est utilisé comme clé pour les composants Collapse qui sont mapper avec map() */}
                 {donneesAPropos.map((donneeAPropos,index) => {
-                    return <Collapse key={index} titre={donneeAPropos.titre} contenu={donneeAPropos.contenu} />
+                    return  <Collapse 
+                            key={index} 
+                            titre={donneeAPropos.titre} 
+                            contenu={donneeAPropos.contenu} 
+                            classConteneurMenuDeroulant='conteneurMenuDeroulant' 
+                            classMenuDeroulantTitre='menuDeroulantTitre' 
+                            classMenuDeroulantTexte='menuDeroulantTexte' 
+                            classConteneurPrincipalMenuDeroulant='conteneurPrincipalMenuDeroulant'
+                            classMenuDeroulantContenu='menuDeroulantContenu'
+                            />
                 })}
             </div>
         </main>

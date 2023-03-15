@@ -1,5 +1,4 @@
 .conteneurPrincipalDuCarrousel {
-    /*background-color: blue;*/
     width: 90%;
     height: 450px;
     border-radius: 25px; 
@@ -18,11 +17,9 @@
     width:100%;
     position:relative;
     z-index:1;
-    /*background-color: green;*/
 }
 
 .conteneurCarousselFleches{
-    /*background-color: orange;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,7 +40,6 @@
 }
 
 .conteneurCarrouselCompteurImages {
-    /*background-color: aqua;*/
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -52,9 +48,34 @@
 .compteurImagesDuCarrousel {
     position: relative;
     z-index:1;
-    bottom:165px;
-    /*left:675px;*/
+    bottom:150px;
     font-size: 18px;
     font-weight: 500;
     color:#FFFFFF;
+}
+
+/*--------------------------------Media Queries--------------------------------*/
+
+@media all and (max-width: 1024px) { 
+    
+    .conteneurPrincipalDuCarrousel {
+        height: 255px;
+        border-radius: 10px;       
+    }
+
+    .conteneurCarrouselCompteurImages {
+        display:none;
+    }
+
+    .flecheGaucheCaroussel {
+        width:11.67px;
+        height: 19.8px;
+        bottom:140px;
+    }
+
+    .flecheDroiteCaroussel {
+        width:11.67px;
+        height: 19.8px;
+        bottom:140px;
+    }   
 }

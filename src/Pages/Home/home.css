@@ -1,6 +1,6 @@
 .conteneurCards {
     background-color: #F6F6F6;
-    width:1240px;
+    width:90%;
     height: 2800px;
     border-radius: 25px;
     display: grid;
@@ -13,7 +13,6 @@
 }
 
 .conteneurPrincipalHome {
-    /*background-color: aqua;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -24,25 +23,9 @@
 
 /*--------------------------------Media Queries--------------------------------*/
 
-/*-------------------Mode 'Tablette'-------------------*/
-
-@media all and (min-width: 376px) and (max-width: 1300px) {
-
-    .conteneurCards {
-        height:auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-}
-
-/*-------------------Mobile type iPhone 6/7/8 iOS 11-------------------*/
-
-@media all and (max-width: 376px) { 
+@media all and (max-width: 1024px) { 
     .conteneurCards{
-        background-color: #FFFFFF;
-        /*background-color: yellow;*/
+        /*background-color: #FFFFFF;*/
         height:auto;
         display: flex;
         flex-direction: row;

@@ -48,6 +48,7 @@ function Slideshow ({pictures}) {
                     <img className='flecheDroiteCaroussel' src={flecheDroiteCarrousel} onClick={() => defilementDuCarrouselADroite()} alt='Flèche droite du carrousel'/>
                 </div>
                 <div className='conteneurCarrouselCompteurImages'>
+                    {/*Compteur d'images du carrousel affiché sous forme de fraction */}
                     <p className='compteurImagesDuCarrousel'>{indexCourant+1}/{pictures.length}</p>    
                 </div>    
             </div>

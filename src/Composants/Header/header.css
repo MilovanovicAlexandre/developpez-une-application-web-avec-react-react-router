@@ -1,5 +1,4 @@
 header{
-    /*background-color: blue;*/
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -20,8 +19,7 @@ header{
 }
 
 .conteneurLogoEtNavigation{
-    /*background-color: green;*/
-    width:1240px;
+    width:90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,17 +27,15 @@ header{
 }
 
 .conteneurNavigation{
-    /*background-color: aqua;*/
     list-style: none;
     padding:0px;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .conteneurDeTouteLaNavigation{
-    /*background-color: red;*/
-    width:20%;
+    width:30%;
 }
 
 .lienAccueil:hover{
@@ -55,57 +51,25 @@ header{
     height: 68px;
 }
 
-/*--------------------------------Media Queries--------------------------------*/
-
-/*-------------------Mode 'Tablette'-------------------*/
-
-@media all and (min-width: 376px) and (max-width: 1300px) {
-
-    .conteneurLogoEtNavigation{
-        width:95%;
-        justify-content: space-between;
-        
-    }
-
-    .conteneurDeTouteLaNavigation{
-        margin-left: 2%;
-        margin-right: 2%;
-        flex:0.5;   
-    }
-
-    .conteneurLogo{
-        flex:0.5;
-        /*background-color: yellow;*/
-    }
-
-    .conteneurNavigation{
-        justify-content: flex-end;        
-    }
-
-    .conteneurLienAccueil{
-        margin-right: 4%;
-    }
+.conteneurLienAccueil{
+    margin-right: 26%;
 }
 
-/*-------------------Mobile type iPhone 6/7/8 iOS 11-------------------*/
+/*--------------------------------Media Queries--------------------------------*/
 
-@media all and (max-width: 376px) {
+@media all and (max-width: 1024px) {
 
     .conteneurLogoEtNavigation{
-        width:95%;
         justify-content: space-between;
-        
     }
 
     .conteneurDeTouteLaNavigation{
         margin-left: 2%;
-        margin-right: 2%;
         flex:0.5;   
     }
 
     .conteneurLogo{
         flex:0.5;
-        /*background-color: yellow;*/
     }
 
     .conteneurNavigation{

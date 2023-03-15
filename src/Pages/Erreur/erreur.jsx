@@ -13,6 +13,7 @@ function Erreur() {
                 </p>
             </div>
             <div className='conteneurErreurLien'>
+                {/*Utilisation du composant Link de react router */}
                 <Link to='/' className='erreurLienAccueil'>Retourner sur la page d'accueil</Link>
             </div>      
         </main>

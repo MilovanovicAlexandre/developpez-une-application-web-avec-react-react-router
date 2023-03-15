@@ -8,8 +8,13 @@ import logements from '../../Ressources/logements.json'
 function Home () {
     return (
         <main>
-            <Banner imgSrc={imageBanniere} imgAlt='La bannière' imgTexteAccompagnement='Chez vous, partout et ailleurs' classConteneurBanniere='conteneurPrincipalBanniere' />
-
+            {/*Appel du composant de la bannière */}
+            <Banner 
+            imgSrc={imageBanniere} 
+            imgAlt='La bannière' 
+            imgTexteAccompagnement='Chez vous, partout et ailleurs' 
+            classConteneurBanniere='conteneurPrincipalBanniere' 
+            />
             <div className='conteneurPrincipalHome'>
                 <div className='conteneurCards'>
                     {/*Chaque composant Card a une clé valant l'id de chaque logement, l'ajout d'une clé est nécessaire

@@ -3,7 +3,7 @@ import './banner.css'
 
 function Banner (props){
 
-    // On récupères les 3 propos du composants Banner grâce à la destructuration
+    // On récupère les 4 props du composant Banner grâce à la destructuration
     const  {imgSrc, imgAlt, imgTexteAccompagnement,classConteneurBanniere} = props
 
     return (

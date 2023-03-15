@@ -1,5 +1,5 @@
 .imageBanniere {
-    width: 1240px;
+    width:100%;
     height:100%;
     border-radius: 25px;
     object-fit: cover;
@@ -7,8 +7,7 @@
 }
 
 .conteneurBanniere {
-    /*background-color: yellow;*/
-    width: 1240px;
+    width:90%;
     height: 100%;
     display:flex;
     flex-direction: column;
@@ -23,7 +22,6 @@
 }
 
 .conteneurPrincipalBanniere {
-    /*background-color: green;*/
     height: 223px;
     margin-top: 60px;
     display: flex;
@@ -32,7 +30,6 @@
 }
 
 .conteneurPrincipalBanniere2 {
-    /*background-color: green;*/
     height: 223px;
     margin-top: 60px;
     display: flex;
@@ -42,34 +39,9 @@
 
 /*--------------------------------Media Queries--------------------------------*/
 
-/*-------------------Mode 'Tablette'-------------------*/
-
-@media all and (min-width: 376px) and (max-width: 1300px) {
+@media all and (max-width: 1024px) {
 
     .conteneurBanniere {
-        width:80%;
-        align-items: flex-start;
-
-    }
-
-    .imageBanniere {
-        width:100%;
-    }
-
-    .texteBanniere {
-        /*background-color: blue;*/
-        width:80%;
-        bottom:230px;
-        left:1px;       
-    }
-}
-
-/*-------------------Mobile type iPhone 6/7/8 iOS 11-------------------*/
-
-@media all and (max-width: 376px) {
-
-    .conteneurBanniere {
-        /*background-color: aqua;*/
         width:90%;
         height:100%;
         align-items: flex-start;
@@ -82,15 +54,16 @@
     }
 
     .texteBanniere {
+        /*background-color: blue;*/
         position:relative;
         bottom:100px;
-        right: 40px;
+        right: 35px;
         font-size: 24px;
-        /*background-color: blue;*/
         width:60%;
     }
 
     .conteneurPrincipalBanniere {
+        /*background-color: red;*/
         margin-top: 15px;
         height: 111px;       
     }

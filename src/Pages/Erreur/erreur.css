@@ -1,19 +1,16 @@
 .erreurMain {
-    /*background-color: red;*/
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .conteneurTitreEtMessageErreur {
-    /*background-color: aqua;*/
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .conteneurErreurLien {
-    /*background-color: chartreuse;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +25,6 @@
 }
 
 .erreurMessage {
-    /*background-color: green;*/
     color:#FF6060;
     font-size: 30px;
     font-weight: 500;
@@ -48,16 +44,7 @@
 
 /*--------------------------------Media Queries--------------------------------*/
 
-/*-------------------Mode 'Tablette'-------------------*/
-
-@media all and (min-width: 376px) and (max-width: 1300px) {
-
-   
-}
-
-/*-------------------Mobile type iPhone 6/7/8 iOS 11-------------------*/
-
-@media all and (max-width: 376px) { 
+@media all and (max-width: 1024px) { 
     
     .erreurTitre {
         font-size: 96px;
@@ -65,7 +52,6 @@
     }
 
     .erreurMessage {
-        /*background-color: green;*/
         font-size: 18px;
         font-weight: 500;
         margin-top: -60px;
@@ -86,8 +72,7 @@
         margin-top: 60px;
     }
 
-    .conteneurErreurLien {
-        /*background-color: chartreuse;*/
+    .conteneurErreurLien { 
         margin-bottom: 180px;
     }
 

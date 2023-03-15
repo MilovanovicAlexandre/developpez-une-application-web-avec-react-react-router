@@ -12,8 +12,9 @@ function Header() {
                 </div>
                 <nav className='conteneurDeTouteLaNavigation'>
                     <ul className='conteneurNavigation'>
+                        {/*La navigation affiché sous forme de liste à puce <li> avec des composants Link pour les liens */}
                         <li className='conteneurLienAccueil'><Link to='/Home' className='lienAccueil'>Accueil</Link></li>
-                        <li><Link to='/A-Propos' className='lienAPropos'>A propos</Link></li>
+                        <li className='conteneurLienAPropos'><Link to='/A-Propos' className='lienAPropos'>A propos</Link></li>
                     </ul>
                 </nav>
             </div>

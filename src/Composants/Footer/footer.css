@@ -14,12 +14,10 @@ footer {
 }
 
 .conteneurImageEtTexteDuFooter {
-    /*background-color: red;*/
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .logoFooter {
@@ -29,16 +27,7 @@ footer {
 
 /*--------------------------------Media Queries--------------------------------*/
 
-/*-------------------Mode 'Tablette'-------------------*/
-
-@media all and (min-width: 376px) and (max-width: 1300px) {
-
-   
-}
-
-/*-------------------Mobile type iPhone 6/7/8 iOS 11-------------------*/
-
-@media all and (max-width: 376px) { 
+@media all and (max-width: 1024px) { 
     .texteFooter {
         font-size: 12px;
     }
